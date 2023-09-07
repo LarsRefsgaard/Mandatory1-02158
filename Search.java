@@ -265,54 +265,51 @@ public class Search {
              * Run search using multiple tasks
              *********************************************/
 
-            /*
-             * +++++++++ Uncomment for Problem 2+
-             *
-             * // Create list of tasks
-             * List<SearchTask> taskList = new ArrayList<SearchTask>();
-             *
-             * // TODO: Add tasks to list here
-             *
-             * List<Integer> result = null;
-             *
-             * // Run the tasks a couple of times
-             * for (int i = 0; i < warmups; i++) {
-             * engine.invokeAll(taskList);
-             * }
-             *
-             * totalTime = 0.0;
-             *
-             * for (int run = 0; run < runs; run++) {
-             *
-             * start = System.nanoTime();
-             *
-             * // Submit tasks and await results
-             * List<Future<List<Integer>>> futures = engine.invokeAll(taskList);
-             *
-             * // Overall result is an ordered list of unique occurrence positions
-             * result = new LinkedList<Integer>();
-             *
-             * // TODO: Combine future results into an overall result
-             *
-             * time = (double) (System.nanoTime() - start) / 1e9;
-             * totalTime += time;
-             *
-             * System.out.printf("\nUsing %2d tasks: ", ntasks);
-             * writeRun(run); writeResult(result); writeTime(time);
-             * }
-             *
-             * double multiTime = totalTime / runs;
-             * System.out.printf("\n\nUsing %2d tasks (avg.): ", ntasks);
-             * writeTime(multiTime); System.out.println();
-             *
-             *
-             * if (!singleResult.equals(result)) {
-             * System.out.println("\nERROR: lists differ");
-             * }
-             * System.out.printf("\n\nAverage speedup: %1.2f\n\n", singleTime / multiTime);
-             *
-             * ++++++++++
-             */
+
+            // Create list of tasks
+            List<SearchTask> taskList = new ArrayList<SearchTask>();
+
+            // TODO: Add tasks to list here
+
+            List<Integer> result = null;
+
+            // Run the tasks a couple of times
+            for (int i = 0; i < warmups; i++) {
+                engine.invokeAll(taskList);
+            }
+
+            totalTime = 0.0;
+
+            for (int run = 0; run < runs; run++) {
+
+                start = System.nanoTime();
+
+                // Submit tasks and await results
+                List<Future<List<Integer>>> futures = engine.invokeAll(taskList);
+
+                // Overall result is an ordered list of unique occurrence positions
+                result = new LinkedList<Integer>();
+
+                // TODO: Combine future results into an overall result
+
+                time = (double) (System.nanoTime() - start) / 1e9;
+                totalTime += time;
+
+                System.out.printf("\nUsing %2d tasks: ", ntasks);
+                writeRun(run);
+                writeResult(result);
+                writeTime(time);
+            }
+
+            double multiTime = totalTime / runs;
+            System.out.printf("\n\nUsing %2d tasks (avg.): ", ntasks);
+            writeTime(multiTime);
+            System.out.println();
+
+            if (!singleResult.equals(result)) {
+                System.out.println("\nERROR: lists differ");
+            }
+            System.out.printf("\n\nAverage speedup: %1.2f\n\n", singleTime / multiTime);
 
             /**********************************************
              * Terminate engine after use
