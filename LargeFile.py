@@ -22,7 +22,7 @@ max_pattern_occurrences = 256  # Adjust this to control the number of pattern oc
 random_text = generate_random_text(file_size, search_pattern, max_pattern_occurrences)
 
 # Save the random text as a file
-with open("large_file.txt", "w") as file:
+with open("test_files/large_file.txt", "w") as file:
     file.write(random_text)
 
 print("File with search pattern generated successfully.")
