@@ -270,6 +270,11 @@ public class Search {
             List<SearchTask> taskList = new ArrayList<SearchTask>();
 
             // TODO: Add tasks to list here
+            for (int i = 0; i < ntasks; i++) {
+                int from = i * (len / ntasks);
+                int to = (i + 1) * (len / ntasks);
+                taskList.add(new SearchTask(text, pattern, from, to));
+            }
 
             List<Integer> result = null;
 
