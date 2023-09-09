@@ -265,14 +265,16 @@ public class Search {
              * Run search using multiple tasks
              *********************************************/
 
-
             // Create list of tasks
             List<SearchTask> taskList = new ArrayList<SearchTask>();
 
             // TODO: Add tasks to list here
             for (int i = 0; i < ntasks; i++) {
                 int from = i * (len / ntasks);
-                int to = (i + 1) * (len / ntasks);
+                int to = (i + 1) * (len / ntasks) + (pattern.length - 1);
+                if (i == ntasks - 1) {
+                    to = len;
+                }
                 taskList.add(new SearchTask(text, pattern, from, to));
             }
 
@@ -296,6 +298,9 @@ public class Search {
                 result = new LinkedList<Integer>();
 
                 // TODO: Combine future results into an overall result
+                for (Future<List<Integer>> future : futures) {
+                    result.addAll(future.get());
+                }
 
                 time = (double) (System.nanoTime() - start) / 1e9;
                 totalTime += time;
