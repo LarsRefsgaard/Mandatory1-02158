@@ -1,0 +1,19 @@
+
+File=test_files/large_file.txt, length=10000000, pattern='ABCDEFDGHIJKL'
+ntasks=1, nthreads=1, warmups=2, runs=12
+executor: SINGLE
+
+Single task: Run no.  0: 256 occurrences found in 0,160661 s
+Single task: Run no.  1: 256 occurrences found in 0,182165 s
+Single task: Run no.  2: 256 occurrences found in 0,163525 s
+Single task: Run no.  3: 256 occurrences found in 0,165775 s
+Single task: Run no.  4: 256 occurrences found in 0,159961 s
+Single task: Run no.  5: 256 occurrences found in 0,159737 s
+Single task: Run no.  6: 256 occurrences found in 0,159473 s
+Single task: Run no.  7: 256 occurrences found in 0,159341 s
+Single task: Run no.  8: 256 occurrences found in 0,163069 s
+Single task: Run no.  9: 256 occurrences found in 0,160302 s
+Single task: Run no. 10: 256 occurrences found in 0,159160 s
+Single task: Run no. 11: 256 occurrences found in 0,161744 s
+
+Single task (avg.): 0,162909 s

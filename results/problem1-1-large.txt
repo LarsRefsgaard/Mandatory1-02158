@@ -1,0 +1,8 @@
+
+File=test_files/large_file.txt, length=10000000, pattern='ABCDEFDGHIJKL'
+ntasks=1, nthreads=1, warmups=0, runs=1
+executor: SINGLE
+
+Single task: Run no.  0: 256 occurrences found in 0,338182 s
+
+Single task (avg.): 0,338182 s

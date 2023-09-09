@@ -1,0 +1,8 @@
+
+File=test_files/human_genome.txt, length=6468108, pattern='ATATTGGC'
+ntasks=1, nthreads=1, warmups=0, runs=1
+executor: SINGLE
+
+Single task: Run no.  0: 122 occurrences found in 0,126161 s
+
+Single task (avg.): 0,126161 s
