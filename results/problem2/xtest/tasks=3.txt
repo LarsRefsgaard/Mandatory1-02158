@@ -1,0 +1,34 @@
+
+File=test_files/xtest.txt, length=6205, pattern='xxxx'
+ntasks=3, nthreads=1, warmups=0, runs=10
+executor: CACHED
+
+Single task: Run no.  0: 2605 occurrences found in 0,003823 s
+Single task: Run no.  1: 2605 occurrences found in 0,001377 s
+Single task: Run no.  2: 2605 occurrences found in 0,000481 s
+Single task: Run no.  3: 2605 occurrences found in 0,000434 s
+Single task: Run no.  4: 2605 occurrences found in 0,000398 s
+Single task: Run no.  5: 2605 occurrences found in 0,000376 s
+Single task: Run no.  6: 2605 occurrences found in 0,000547 s
+Single task: Run no.  7: 2605 occurrences found in 0,000516 s
+Single task: Run no.  8: 2605 occurrences found in 0,000496 s
+Single task: Run no.  9: 2605 occurrences found in 0,000406 s
+
+Single task (avg.): 0,000885 s
+
+Using  3 tasks: Run no.  0: 2605 occurrences found in 0,000892 s
+Using  3 tasks: Run no.  1: 2605 occurrences found in 0,001467 s
+Using  3 tasks: Run no.  2: 2605 occurrences found in 0,001867 s
+Using  3 tasks: Run no.  3: 2605 occurrences found in 0,001741 s
+Using  3 tasks: Run no.  4: 2605 occurrences found in 0,001062 s
+Using  3 tasks: Run no.  5: 2605 occurrences found in 0,001809 s
+Using  3 tasks: Run no.  6: 2605 occurrences found in 0,000942 s
+Using  3 tasks: Run no.  7: 2605 occurrences found in 0,000691 s
+Using  3 tasks: Run no.  8: 2605 occurrences found in 0,000896 s
+Using  3 tasks: Run no.  9: 2605 occurrences found in 0,001457 s
+
+Using  3 tasks (avg.): 0,001282 s
+
+
+Average speedup: 0,69
+

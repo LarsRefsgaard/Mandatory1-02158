@@ -1,0 +1,34 @@
+
+File=test_files/human_genome.txt, length=6468108, pattern='ATGATCAAG'
+ntasks=9, nthreads=1, warmups=0, runs=10
+executor: CACHED
+
+Single task: Run no.  0: 35 occurrences found in 0,145477 s
+Single task: Run no.  1: 35 occurrences found in 0,131041 s
+Single task: Run no.  2: 35 occurrences found in 0,078099 s
+Single task: Run no.  3: 35 occurrences found in 0,079096 s
+Single task: Run no.  4: 35 occurrences found in 0,085344 s
+Single task: Run no.  5: 35 occurrences found in 0,082840 s
+Single task: Run no.  6: 35 occurrences found in 0,078814 s
+Single task: Run no.  7: 35 occurrences found in 0,078984 s
+Single task: Run no.  8: 35 occurrences found in 0,079003 s
+Single task: Run no.  9: 35 occurrences found in 0,078182 s
+
+Single task (avg.): 0,091688 s
+
+Using  9 tasks: Run no.  0: 35 occurrences found in 0,025877 s
+Using  9 tasks: Run no.  1: 35 occurrences found in 0,023837 s
+Using  9 tasks: Run no.  2: 35 occurrences found in 0,023311 s
+Using  9 tasks: Run no.  3: 35 occurrences found in 0,022534 s
+Using  9 tasks: Run no.  4: 35 occurrences found in 0,021529 s
+Using  9 tasks: Run no.  5: 35 occurrences found in 0,022049 s
+Using  9 tasks: Run no.  6: 35 occurrences found in 0,023402 s
+Using  9 tasks: Run no.  7: 35 occurrences found in 0,024739 s
+Using  9 tasks: Run no.  8: 35 occurrences found in 0,024297 s
+Using  9 tasks: Run no.  9: 35 occurrences found in 0,023775 s
+
+Using  9 tasks (avg.): 0,023535 s
+
+
+Average speedup: 3,90
+

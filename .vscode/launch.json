@@ -10,9 +10,9 @@
             "request": "launch",
             "mainClass": "${file}",
             "args": [
-                "test_files/xtest.txt",
+                "test_files/test.txt",
                 "xxxx",
-                4
+                2
             ]
         },
         {
