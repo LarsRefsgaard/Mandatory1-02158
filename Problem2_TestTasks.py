@@ -9,8 +9,8 @@ import time
 path = "Search.java"
 
 # the file name
-file_name = "xtest"
-search_pattern = "xxxx"
+file_name = "shakespeare"
+search_pattern = "\"Something is rotten in the state of Denmark\""
 
 # the path of the test files
 test_path = f"test_files/{file_name}.txt"
@@ -23,7 +23,7 @@ output_path = f"results/problem2/{file_name}/tasks=%d.txt"
 num_of_runs = 10
 
 # run the program
-for num_of_tasks in range(2, 10):
+for num_of_tasks in range(16000, 16001):
     os.system(
         "java Search -Ec -R "
         + str(num_of_runs)
