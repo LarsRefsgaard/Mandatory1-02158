@@ -26,7 +26,7 @@ for num_of_tasks in range(2, 20):
     for num_of_threads in range(1, 20):
         output_path = f"results/problem4/{file_name}/ta={num_of_tasks},tr={num_of_threads}.txt"
         os.system(
-            "java Search -Ec -R "
+            "java Search -Ef -R "
             + str(num_of_runs)
             + " "
             + test_path
