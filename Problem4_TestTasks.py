@@ -22,17 +22,20 @@ test_path = f"test_files/{file_name}.txt"
 num_of_runs = 10
 
 # run the program
-for num_of_tasks in range(2, 160):
-    output_path = f"results/problem2/{file_name}/tasks={num_of_tasks}.txt"
-    os.system(
-        "java Search -Ec -R"
-        + str(num_of_runs)
-        + " "
-        + test_path
-        + " "
-        + search_pattern
-        + " "
-        + str(num_of_tasks)
-        + " > "
-        + output_path
-    )
+for num_of_tasks in range(2, 20):
+    for num_of_threads in range(1, 20):
+        output_path = f"results/problem4/{file_name}/ta={num_of_tasks},tr={num_of_threads}.txt"
+        os.system(
+            "java Search -Ec -R "
+            + str(num_of_runs)
+            + " "
+            + test_path
+            + " "
+            + search_pattern
+            + " "
+            + str(num_of_tasks)
+            + " "
+            + str(num_of_threads)
+            + " > "
+            + output_path
+        )
