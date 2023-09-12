@@ -2,8 +2,8 @@
 # the command to run the program is: java Search -Ec -R <number_of_runs> <test_file> <search_pattern> <num_of_tasks>
 
 import os
-import subprocess
-import time
+
+os.system("javac Search.java")
 
 # the path of the java file
 path = "Search.java"
