@@ -268,7 +268,7 @@ public class Search {
             // Create list of tasks
             List<SearchTask> taskList = new ArrayList<SearchTask>();
 
-            // TODO: Add tasks to list here
+            // Add tasks to list
             for (int i = 0; i < ntasks; i++) {
                 int from = i * (len / ntasks);
                 int to = (i + 1) * (len / ntasks) + (pattern.length - 1);
@@ -297,7 +297,7 @@ public class Search {
                 // Overall result is an ordered list of unique occurrence positions
                 result = new LinkedList<Integer>();
 
-                // TODO: Combine future results into an overall result
+                // Combine future results into an overall result
                 for (Future<List<Integer>> future : futures) {
                     result.addAll(future.get());
                 }
