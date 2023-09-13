@@ -1,0 +1,16 @@
+
+File=test_files/xtest.txt, length=6205, pattern='xxxx'
+ntasks=1, nthreads=1, warmups=0, runs=1
+executor: SINGLE
+
+Single task: Run no.  0: 2605 occurrences found in 0.001446 s
+
+Single task (avg.): 0.001446 s
+
+Using  1 tasks: Run no.  0: 2605 occurrences found in 0.000704 s
+
+Using  1 tasks (avg.): 0.000704 s
+
+
+Average speedup: 2.06
+
