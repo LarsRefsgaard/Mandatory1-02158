@@ -1,0 +1,34 @@
+
+File=test_files/shakespeare.txt, length=5392625, pattern='Something is rotten in the state of Denmark'
+ntasks=18, nthreads=1, warmups=0, runs=10
+executor: CACHED
+
+Single task: Run no.  0: 1 occurrences found in 0.670904 s
+Single task: Run no.  1: 1 occurrences found in 0.714091 s
+Single task: Run no.  2: 1 occurrences found in 0.372613 s
+Single task: Run no.  3: 1 occurrences found in 0.373328 s
+Single task: Run no.  4: 1 occurrences found in 0.372425 s
+Single task: Run no.  5: 1 occurrences found in 0.372003 s
+Single task: Run no.  6: 1 occurrences found in 0.366575 s
+Single task: Run no.  7: 1 occurrences found in 0.366346 s
+Single task: Run no.  8: 1 occurrences found in 0.366473 s
+Single task: Run no.  9: 1 occurrences found in 0.367623 s
+
+Single task (avg.): 0.434238 s
+
+Using 18 tasks: Run no.  0: 1 occurrences found in 0.042719 s
+Using 18 tasks: Run no.  1: 1 occurrences found in 0.038116 s
+Using 18 tasks: Run no.  2: 1 occurrences found in 0.033471 s
+Using 18 tasks: Run no.  3: 1 occurrences found in 0.037855 s
+Using 18 tasks: Run no.  4: 1 occurrences found in 0.033381 s
+Using 18 tasks: Run no.  5: 1 occurrences found in 0.033233 s
+Using 18 tasks: Run no.  6: 1 occurrences found in 0.033562 s
+Using 18 tasks: Run no.  7: 1 occurrences found in 0.033150 s
+Using 18 tasks: Run no.  8: 1 occurrences found in 0.034566 s
+Using 18 tasks: Run no.  9: 1 occurrences found in 0.037925 s
+
+Using 18 tasks (avg.): 0.035798 s
+
+
+Average speedup: 12.13
+
