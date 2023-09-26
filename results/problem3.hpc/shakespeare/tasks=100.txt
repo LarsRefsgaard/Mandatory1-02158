@@ -1,34 +1,34 @@
 
 File=test_files/shakespeare.txt, length=5392625, pattern='Something is rotten in the state of Denmark'
-ntasks=100, nthreads=1, warmups=0, runs=10
+ntasks=100, nthreads=1, warmups=2, runs=10
 executor: CACHED
 
-Single task: Run no.  0: 1 occurrences found in 0.669426 s
-Single task: Run no.  1: 1 occurrences found in 0.702231 s
-Single task: Run no.  2: 1 occurrences found in 0.367121 s
-Single task: Run no.  3: 1 occurrences found in 0.367555 s
-Single task: Run no.  4: 1 occurrences found in 0.366872 s
-Single task: Run no.  5: 1 occurrences found in 0.370031 s
-Single task: Run no.  6: 1 occurrences found in 0.367234 s
-Single task: Run no.  7: 1 occurrences found in 0.366992 s
-Single task: Run no.  8: 1 occurrences found in 0.367212 s
-Single task: Run no.  9: 1 occurrences found in 0.367136 s
+Single task: Run no.  0: 1 occurrences found in 0.366728 s
+Single task: Run no.  1: 1 occurrences found in 0.366661 s
+Single task: Run no.  2: 1 occurrences found in 0.366774 s
+Single task: Run no.  3: 1 occurrences found in 0.366876 s
+Single task: Run no.  4: 1 occurrences found in 0.370526 s
+Single task: Run no.  5: 1 occurrences found in 0.366520 s
+Single task: Run no.  6: 1 occurrences found in 0.366697 s
+Single task: Run no.  7: 1 occurrences found in 0.366502 s
+Single task: Run no.  8: 1 occurrences found in 0.366354 s
+Single task: Run no.  9: 1 occurrences found in 0.366308 s
 
-Single task (avg.): 0.431181 s
+Single task (avg.): 0.366994 s
 
-Using 100 tasks: Run no.  0: 1 occurrences found in 0.038915 s
-Using 100 tasks: Run no.  1: 1 occurrences found in 0.027118 s
-Using 100 tasks: Run no.  2: 1 occurrences found in 0.026731 s
-Using 100 tasks: Run no.  3: 1 occurrences found in 0.026534 s
-Using 100 tasks: Run no.  4: 1 occurrences found in 0.026298 s
-Using 100 tasks: Run no.  5: 1 occurrences found in 0.025987 s
-Using 100 tasks: Run no.  6: 1 occurrences found in 0.048449 s
-Using 100 tasks: Run no.  7: 1 occurrences found in 0.027876 s
-Using 100 tasks: Run no.  8: 1 occurrences found in 0.026132 s
-Using 100 tasks: Run no.  9: 1 occurrences found in 0.025908 s
+Using 100 tasks: Run no.  0: 1 occurrences found in 0.026765 s
+Using 100 tasks: Run no.  1: 1 occurrences found in 0.027392 s
+Using 100 tasks: Run no.  2: 1 occurrences found in 0.026481 s
+Using 100 tasks: Run no.  3: 1 occurrences found in 0.045358 s
+Using 100 tasks: Run no.  4: 1 occurrences found in 0.027787 s
+Using 100 tasks: Run no.  5: 1 occurrences found in 0.025790 s
+Using 100 tasks: Run no.  6: 1 occurrences found in 0.026613 s
+Using 100 tasks: Run no.  7: 1 occurrences found in 0.026104 s
+Using 100 tasks: Run no.  8: 1 occurrences found in 0.025955 s
+Using 100 tasks: Run no.  9: 1 occurrences found in 0.026205 s
 
-Using 100 tasks (avg.): 0.029995 s
+Using 100 tasks (avg.): 0.028445 s
 
 
-Average speedup: 14.38
+Average speedup: 12.90
 

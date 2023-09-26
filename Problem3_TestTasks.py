@@ -23,7 +23,7 @@ num_of_runs = 10
 
 # run the program
 for num_of_tasks in range(1, 160):
-    output_path = f"results/problem3/{file_name}/tasks={num_of_tasks}.txt"
+    output_path = f"results/problem3.hpc/{file_name}/tasks={num_of_tasks}.txt"
     os.system(
         "java Search -Ec -R "
         + str(num_of_runs)
