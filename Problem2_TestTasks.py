@@ -9,8 +9,8 @@ os.system("javac Search.java")
 path = "Search.java"
 
 # the file name
-file_name = "xtest"
-search_pattern = '"xxxx"'
+file_name = "shakespeare"
+search_pattern = '"Something is rotten in the state of Denmark"'
 
 # the path of the test files
 test_path = f"test_files/{file_name}.txt"
