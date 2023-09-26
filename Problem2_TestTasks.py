@@ -25,6 +25,7 @@ for num_of_tasks in range(1, 9):
     output_path = f"results/problem2/{file_name}/tasks={num_of_tasks}.txt"
     os.system(
         "java Search "
+        + " -W 2 "
         + test_path
         + " "
         + search_pattern

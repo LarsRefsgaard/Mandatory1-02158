@@ -27,6 +27,7 @@ for num_of_tasks in range(1, 160):
     os.system(
         "java Search -Ec -R "
         + str(num_of_runs)
+        + " -W 2 "
         + " "
         + test_path
         + " "
