@@ -3,14 +3,14 @@ File=test_files/shakespeare.txt, length=5392625, pattern='Something is rotten in
 ntasks=7, nthreads=1, warmups=2, runs=1
 executor: SINGLE
 
-Single task: Run no.  0: 1 occurrences found in 0.180234 s
+Single task: Run no.  0: 1 occurrences found in 0.176001 s
 
-Single task (avg.): 0.180234 s
+Single task (avg.): 0.176001 s
 
-Using  7 tasks: Run no.  0: 1 occurrences found in 0.174652 s
+Using  7 tasks: Run no.  0: 1 occurrences found in 0.176722 s
 
-Using  7 tasks (avg.): 0.174652 s
+Using  7 tasks (avg.): 0.176722 s
 
 
-Average speedup: 1.03
+Average speedup: 1.00
 
